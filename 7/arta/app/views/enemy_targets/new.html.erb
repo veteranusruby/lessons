@@ -1,0 +1,22 @@
+<h1>Нова ціль</h1>
+
+<%= form_with model: @enemy_target do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :distance %><br>
+    <%= form.text_field :distance %>
+  </div>
+
+  <div>
+    <%= form.label :max_radius %><br>
+    <%= form.text_field :max_radius %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

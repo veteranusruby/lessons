@@ -3,7 +3,9 @@
 <ul>
   <% @enemy_targets.each do |enemy_target| %>
     <li>
-      <%= enemy_target.name %>
+      <a href="/enemy_targets/<%= enemy_target.id %>">
+        <%= enemy_target.name %>
+      </a>
     </li>
   <% end %>
 </ul>

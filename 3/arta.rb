@@ -76,10 +76,6 @@ module Arta
     end
     p "WARNING: Ціль не знищено:( у гарматі скінчилися набої!" unless target_destroyed
   end
-
-  def self.run
-    p 'lalala'
-  end
 end
 
 Arta.run
