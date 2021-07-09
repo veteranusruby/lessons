@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root "enemy_targets#index"
 
   resources :enemy_targets
-  #get "/enemy_targets", to: "enemy_targets#index"
-  #get "/enemy_targets/:id", to: "enemy_targets#show"
+  resources :guns
+
 end

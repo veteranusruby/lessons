@@ -1,0 +1,17 @@
+<h1>Name of gun: <%= @gun.name %></h1>
+
+<p>Start speed: <%= @gun.start_speed %></p>
+
+<p>Min angle: <%= @gun.min_angle %></p>
+
+<p>Max angle: <%= @gun.max_angle %></p>
+
+<p>Bullet count: <%= @gun.bullet_count %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_gun_path(@gun) %></li>
+  <li><%= link_to "Destroy", gun_path(@gun),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+  </li>
+</ul>

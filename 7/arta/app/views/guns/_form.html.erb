@@ -1,0 +1,45 @@
+<%= form_with model: gun do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+    <%= gun.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :start_speed %><br>
+    <%= form.text_field :start_speed %>
+    <%= gun.errors.full_messages_for(:start_speed).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :min_angle %><br>
+    <%= form.text_field :min_angle %>
+    <%= gun.errors.full_messages_for(:min_angle).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :max_angle %><br>
+    <%= form.text_field :max_angle %>
+    <%= gun.errors.full_messages_for(:max_angle).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :bullet_count %><br>
+    <%= form.text_field :bullet_count %>
+    <%= gun.errors.full_messages_for(:bullet_count).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

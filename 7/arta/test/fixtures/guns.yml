@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: MyString
+  start_speed: 1.5
+  min_angle: 1
+  max_angle: 1
+  bullet_count: 1
+
+two:
+  id: 1
+  name: MyString
+  start_speed: 1.5
+  min_angle: 1
+  max_angle: 1
+  bullet_count: 1

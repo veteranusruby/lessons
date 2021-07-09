@@ -10,12 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_01_194555) do
+ActiveRecord::Schema.define(version: 2021_07_09_095151) do
 
   create_table "enemy_targets", force: :cascade do |t|
     t.string "name"
     t.integer "distance"
     t.integer "max_radius"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "guns", force: :cascade do |t|
+    t.string "name"
+    t.float "start_speed"
+    t.integer "min_angle"
+    t.integer "max_angle"
+    t.integer "bullet_count"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
